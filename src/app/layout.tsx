@@ -1,13 +1,28 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { TopBar } from "@/components/layout/TopBar";
 import { Header } from "@/components/layout/Header";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-inter",
+});
 
 export const metadata: Metadata = {
-  title: "IN Accountancy | Stockport Accountants & Tax Advisors",
-  description: "Award-winning accountants in Stockport. Helping you save money, make money, and make life easier.",
+  title: "IN Accountancy | Award-Winning Stockport Accountants & Tax Advisors",
+  description:
+    "Qualified Stockport Accountants helping Limited Companies, Sole Traders and Individuals with high quality proactive Accounting & Tax Services. Xero Gold Partner.",
+  keywords: [
+    "Stockport accountants",
+    "tax advisors",
+    "bookkeeping",
+    "VAT returns",
+    "payroll",
+    "Xero Gold Partner",
+    "IN Accountancy",
+  ],
 };
 
 export default function RootLayout({
@@ -16,12 +31,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
+    <html lang="en" className={inter.variable}>
+      <body className={`${inter.className} antialiased`}>
+        <TopBar />
         <Header />
-        <main className="min-h-screen">
-          {children}
-        </main>
+        <main>{children}</main>
       </body>
     </html>
   );
