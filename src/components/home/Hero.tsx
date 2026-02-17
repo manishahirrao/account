@@ -1,71 +1,97 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
+import Link from "next/link";
 import { motion } from "framer-motion";
-import { CheckCircle2, TrendingUp, Users } from "lucide-react";
+import { CheckCircle2 } from "lucide-react";
 
 export function Hero() {
     return (
-        <section className="relative w-full overflow-hidden bg-slate-50 py-12 md:py-24 lg:py-32">
-            <div className="container px-4 md:px-6">
-                <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
+        <section className="relative w-full overflow-hidden bg-[var(--sage-forest)] min-h-[85vh] flex items-center">
+            {/* Background gradient overlay */}
+            <div className="absolute inset-0 bg-gradient-to-br from-[var(--sage-forest)] via-[var(--sage-forest)]/95 to-[#0d2a23]" />
+
+            {/* Decorative elements */}
+            <div className="absolute top-0 right-0 w-1/2 h-full opacity-[0.03]">
+                <div className="absolute top-1/4 right-1/4 w-96 h-96 rounded-full bg-[var(--sage-green)]" />
+                <div className="absolute bottom-1/4 right-1/3 w-64 h-64 rounded-full bg-[var(--sage-green)]" />
+            </div>
+
+            <div className="relative container mx-auto px-4 md:px-6 py-16 md:py-24">
+                <div className="max-w-3xl">
                     <motion.div
-                        initial={{ opacity: 0, x: -20 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.5 }}
-                        className="flex flex-col justify-center space-y-4"
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6 }}
                     >
-                        <div className="inline-flex items-center rounded-lg bg-sky-100 px-3 py-1 text-sm font-medium text-sky-800">
-                            Award-Winning Accountants
-                        </div>
-                        <h1 className="text-3xl font-bold tracking-tighter text-slate-900 sm:text-5xl xl:text-6xl/none">
-                            Stockport Accountants & Business Advisors
-                        </h1>
-                        <p className="max-w-[600px] text-slate-500 md:text-xl dark:text-slate-400">
-                            Helping you save money, make money, and make life easier. We are more than just number crunchers.
-                        </p>
-                        <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                            <Button size="lg" className="bg-sky-600 hover:bg-sky-700">
-                                Book a Free Consultation
-                            </Button>
-                            <Button size="lg" variant="outline">
-                                View Our Services
-                            </Button>
-                        </div>
-                        <div className="flex gap-4 pt-4 text-sm text-slate-500">
-                            <div className="flex items-center gap-1">
-                                <CheckCircle2 className="h-4 w-4 text-sky-600" />
-                                <span>Proactive Advice</span>
-                            </div>
-                            <div className="flex items-center gap-1">
-                                <CheckCircle2 className="h-4 w-4 text-sky-600" />
-                                <span>Fixed Fees</span>
-                            </div>
-                            <div className="flex items-center gap-1">
-                                <CheckCircle2 className="h-4 w-4 text-sky-600" />
-                                <span>Xero Experts</span>
-                            </div>
+                        <div className="inline-flex items-center rounded-full bg-[var(--sage-green)]/15 border border-[var(--sage-green)]/30 px-4 py-1.5 text-sm font-medium text-[var(--sage-green)] mb-6">
+                            ⭐ Award-Winning Local Accountants
                         </div>
                     </motion.div>
 
-                    <motion.div
-                        initial={{ opacity: 0, x: 20 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.5, delay: 0.2 }}
-                        className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last bg-slate-200 flex items-center justify-center shadow-xl"
+                    <motion.h1
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6, delay: 0.1 }}
+                        className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl leading-tight"
                     >
-                        {/* Placeholder for Hero Image */}
-                        <div className="text-center p-8">
-                            <Users className="h-16 w-16 text-slate-400 mx-auto mb-4" />
-                            <p className="text-slate-500 font-medium">Meet the IN Accountancy Team</p>
-                            <p className="text-xs text-slate-400 mt-2">(Image Placeholder)</p>
-                        </div>
+                        Straight-talking accounting and tax advice for businesses across{" "}
+                        <span className="text-[var(--sage-green)]">
+                            Stockport, Cheshire & Greater Manchester
+                        </span>
+                    </motion.h1>
+
+                    <motion.p
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6, delay: 0.2 }}
+                        className="mt-6 text-lg text-gray-300 leading-relaxed max-w-2xl"
+                    >
+                        IN Accountancy are award-winning accountants based in Stockport.
+                        We&apos;re local qualified accountants serving small &amp; medium
+                        sized businesses, entrepreneurs and individuals in Greater
+                        Manchester, Hazel Grove, Bramhall, Poynton, Cheadle Hulme, Cheshire
+                        and across the UK.
+                    </motion.p>
+
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6, delay: 0.3 }}
+                        className="mt-8 flex flex-col sm:flex-row gap-4"
+                    >
+                        <Link
+                            href="/contact"
+                            className="inline-flex items-center justify-center bg-[var(--sage-green)] text-white px-8 py-3.5 rounded-lg text-base font-semibold hover:bg-[var(--sage-green-dark)] transition-all shadow-lg hover:shadow-xl hover:scale-[1.02]"
+                        >
+                            Book a FREE consultation call
+                        </Link>
+                        <Link
+                            href="/services/business-accounting"
+                            className="inline-flex items-center justify-center border-2 border-white/30 text-white px-8 py-3.5 rounded-lg text-base font-semibold hover:bg-white/10 transition-all"
+                        >
+                            View Our Services
+                        </Link>
+                    </motion.div>
+
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6, delay: 0.4 }}
+                        className="mt-8 flex flex-wrap gap-6 text-sm text-gray-300"
+                    >
+                        {[
+                            "Xero Gold Partner",
+                            "Fixed Fees",
+                            "Proactive Advice",
+                        ].map((item) => (
+                            <div key={item} className="flex items-center gap-2">
+                                <CheckCircle2 className="h-4 w-4 text-[var(--sage-green)]" />
+                                <span>{item}</span>
+                            </div>
+                        ))}
                     </motion.div>
                 </div>
             </div>
-
-            {/* Decorative background element */}
-            <div className="absolute top-0 right-0 -z-10 h-full w-1/3 bg-slate-100/50 skew-x-12 origin-top-right" />
         </section>
     );
 }
