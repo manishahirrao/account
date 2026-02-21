@@ -54,6 +54,18 @@ export const navItems: NavItem[] = [
             { name: "Self Assessment", href: "/services/self-assessment" },
         ],
     },
+    {
+        name: "Sage Products",
+        description:
+            "Explore our range of Sage business management solutions — ERP, financial management, CRM, and expert support services.",
+        links: [
+            { name: "Sage 300", href: "/sage-300" },
+            { name: "Sage X3", href: "/sage-x3" },
+            { name: "Sage Intacct", href: "/sage-intacct" },
+            { name: "Sage CRM", href: "/sage-crm" },
+            { name: "Sage Support", href: "/sage-support" },
+        ],
+    },
     { name: "Sectors", href: "/sectors" },
     {
         name: "Resources",
