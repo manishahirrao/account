@@ -11,7 +11,7 @@ interface CTABannerProps {
 
 export function CTABanner({
     title = "Ready to take the stress out of your accounting?",
-    phone = "0161 456 9666",
+   
     email = "askus@in-accountancy.co.uk",
     ctaText = "Book a FREE consultation call",
     ctaLink = "/contact",
@@ -25,13 +25,7 @@ export function CTABanner({
                             {title}
                         </h2>
                         <div className="flex flex-col sm:flex-row items-center gap-4 mt-3 text-white/90">
-                            <a
-                                href={`tel:+44${phone.replace(/\s/g, "").slice(1)}`}
-                                className="flex items-center gap-2 hover:text-white transition-colors"
-                            >
-                                <Phone className="h-4 w-4" />
-                                <span className="text-sm">{phone}</span>
-                            </a>
+                            
                             <a
                                 href={`mailto:${email}`}
                                 className="flex items-center gap-2 hover:text-white transition-colors"

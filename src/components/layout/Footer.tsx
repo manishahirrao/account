@@ -41,15 +41,7 @@ export function Footer() {
                                     {companyInfo.address}
                                 </span>
                             </li>
-                            <li className="flex items-center gap-2.5">
-                                <Phone className="h-4 w-4 text-[var(--sage-green)] shrink-0" />
-                                <a
-                                    href={companyInfo.phoneHref}
-                                    className="text-sm text-gray-300 hover:text-white transition-colors"
-                                >
-                                    {companyInfo.phone}
-                                </a>
-                            </li>
+                           
                             <li className="flex items-center gap-2.5">
                                 <Mail className="h-4 w-4 text-[var(--sage-green)] shrink-0" />
                                 <a
@@ -78,10 +70,7 @@ export function Footer() {
                         <Link href="/sitemap" className="hover:text-white transition-colors">
                             Site Map
                         </Link>
-                        <span>
-                            Company registered in England and Wales no:{" "}
-                            {companyInfo.companyNumber}
-                        </span>
+                        
                     </div>
                 </div>
             </div>

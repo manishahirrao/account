@@ -34,24 +34,7 @@ export const solutionCards: SolutionCard[] = [
         subtitle: "Specialised Accounting",
         href: "/sectors",
     },
-    {
-        icon: BookOpen,
-        title: "Resources, Videos and Information",
-        subtitle: "Guides, news and video support",
-        href: "/resources/guides",
-    },
-    {
-        icon: Phone,
-        title: "Contact Us",
-        subtitle: "Get in touch with our team",
-        href: "/contact",
-    },
-    {
-        icon: Newspaper,
-        title: "News",
-        subtitle: "Latest accountancy news and updates",
-        href: "/news",
-    },
+    
 ];
 
 export interface ServiceColumn {
