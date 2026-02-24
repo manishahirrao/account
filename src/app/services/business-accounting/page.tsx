@@ -6,15 +6,14 @@ import { CTABanner } from "@/components/shared/CTABanner";
 import { Footer } from "@/components/layout/Footer";
 import {
     CheckCircle2,
-    Phone,
     Mail,
     ArrowRight,
 } from "lucide-react";
 
 export const metadata: Metadata = {
-    title: "Business Accounting | IN Accountancy Stockport",
+    title: "Business Accounting | IN Accountancy Austin",
     description:
-        "IN Accountancy Stockport providing cost effective accounting & tax services for sole traders, limited companies, partnerships and LLPs.",
+        "IN Accountancy Austin providing cost effective accounting & tax services for sole proprietors, LLCs, S-Corps, C-Corps, and partnerships.",
 };
 
 const benefits = [
@@ -65,15 +64,15 @@ export default function BusinessAccountingPage() {
                         {/* Main Content */}
                         <div className="lg:col-span-2">
                             <h2 className="text-2xl font-bold text-gray-900 mb-4">
-                                Whether you&apos;re a sole trader, limited company, partnership
+                                Whether you&apos;re a sole proprietor, LLC, S-Corp, C-Corp, partnership
                                 or LLP, having the right accounting support behind you can make
                                 all the difference.
                             </h2>
                             <p className="text-gray-600 leading-relaxed mb-8">
-                                A digital accounting specialist and Xero Gold Partner, IN
+                                A digital accounting specialist and QuickBooks ProAdvisor, IN
                                 Accountancy has a solution for all your small business needs.
-                                From bookkeeping to limited company accounts; personal and
-                                partnership tax; to payroll. From filing your VAT returns, to
+                                From bookkeeping to corporate accounts; personal and
+                                partnership tax; to payroll. From filing your sales tax returns, to
                                 supporting you with your cashflow forecasting, we pride
                                 ourselves on our expert accountancy services and helping our
                                 clients solve their business finance challenges.
@@ -129,18 +128,11 @@ export default function BusinessAccountingPage() {
                                 </Link>
                                 <div className="mt-4 space-y-2 text-sm">
                                     <a
-                                        href="tel:+441614569666"
-                                        className="flex items-center gap-2 text-gray-300 hover:text-white transition-colors"
-                                    >
-                                        <Phone className="h-4 w-4" />
-                                        0161 456 9666
-                                    </a>
-                                    <a
-                                        href="mailto:askus@in-accountancy.co.uk"
+                                        href="mailto:askus@in-accountancy.com"
                                         className="flex items-center gap-2 text-gray-300 hover:text-white transition-colors"
                                     >
                                         <Mail className="h-4 w-4" />
-                                        askus@in-accountancy.co.uk
+                                        askus@in-accountancy.com
                                     </a>
                                 </div>
                             </div>
@@ -152,20 +144,17 @@ export default function BusinessAccountingPage() {
                                 </h3>
                                 <ul className="space-y-2">
                                     {[
-                                        { name: "Business Advisory", href: "/services/business-advisory" },
-                                        { name: "Tax Planning", href: "/services/tax-planning" },
-                                        { name: "Payroll", href: "/services/payroll" },
-                                        { name: "VAT Services", href: "/services/vat-services" },
-                                        { name: "Corporation Tax", href: "/services/corporation-tax" },
+                                        "Business Advisory",
+                                        "Tax Planning",
+                                        "Payroll",
+                                        "Sales Tax Services",
+                                        "Corporate Income Tax",
                                     ].map((s) => (
-                                        <li key={s.name}>
-                                            <Link
-                                                href={s.href}
-                                                className="flex items-center gap-2 text-sm text-gray-600 hover:text-[var(--sage-green)] transition-colors py-1"
-                                            >
+                                        <li key={s}>
+                                            <span className="flex items-center gap-2 text-sm text-gray-600 py-1">
                                                 <ArrowRight className="h-3.5 w-3.5" />
-                                                {s.name}
-                                            </Link>
+                                                {s}
+                                            </span>
                                         </li>
                                     ))}
                                 </ul>

@@ -11,16 +11,17 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "IN Accountancy | Award-Winning Stockport Accountants & Tax Advisors",
+  title: "IN Accountancy | Award-Winning Austin Accountants & Tax Advisors",
   description:
-    "Qualified Stockport Accountants helping Limited Companies, Sole Traders and Individuals with high quality proactive Accounting & Tax Services. Xero Gold Partner.",
+    "Qualified Austin Accountants helping LLCs, S-Corps, C-Corps, Sole Proprietors and Individuals with high quality proactive Accounting & Tax Services. QuickBooks ProAdvisor.",
   keywords: [
-    "Stockport accountants",
+    "Austin accountants",
+    "Texas accountants",
     "tax advisors",
     "bookkeeping",
-    "VAT returns",
+    "sales tax returns",
     "payroll",
-    "Xero Gold Partner",
+    "QuickBooks ProAdvisor",
     "IN Accountancy",
   ],
 };

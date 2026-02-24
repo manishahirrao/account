@@ -22,28 +22,25 @@ export const footerColumns: FooterColumn[] = [
         links: [
            
             { name: "Personal Tax", href: "/services/personal-tax" },
-            { name: "Contractors", href: "/services/freelancers" },
+            { name: "Business Tax", href: "/services/business-accounting" },
         ],
     },
     {
-        title: "Sectors",
+        title: "Sage Products",
         links: [
-           
-            { name: "Creatives", href: "/sectors/creatives" },
-          
-            { name: "Construction", href: "/sectors/construction" },
-            { name: "Manufacturing", href: "/sectors/manufacturing" },
-            { name: "Professional Services", href: "/sectors/professional-services" },
-            { name: "Retail and eCommerce", href: "/sectors/retail" },
+            { name: "Sage 50", href: "/sage-50" },
+            { name: "Sage 300", href: "/sage-300" },
+            { name: "Sage X3", href: "/sage-x3" },
+            { name: "Sage Intacct", href: "/sage-intacct" },
+            { name: "Sage CRM", href: "/sage-crm" },
         ],
     },
 ];
 
 export const companyInfo = {
     name: "IN Accountancy",
-    address: "2 Station View, Rhino Court, Bramhall Moor Lane, Hazel Grove, Stockport, SK7 5ER",
-  
-    email: "askus@in-accountancy.co.uk",
-    emailHref: "mailto:askus@in-accountancy.co.uk",
-    companyNumber: "08251742",
+    address: "123 Congress Avenue, Suite 400, Austin, TX 78701",
+    email: "askus@in-accountancy.com",
+    emailHref: "mailto:askus@in-accountancy.com",
+    ein: "XX-XXXXXXX",
 };

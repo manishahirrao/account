@@ -8,7 +8,7 @@ export const sectors: Sector[] = [
     {
         title: "Accountants for Medical Professionals",
         slug: "medical",
-        description: "Specialist accounting for GPs, dentists, pharmacists, and other healthcare professionals.",
+        description: "Specialist accounting for physicians, dentists, pharmacists, and other healthcare professionals with US healthcare tax considerations.",
     },
     {
         title: "Accountants for Creatives",
@@ -18,22 +18,22 @@ export const sectors: Sector[] = [
     {
         title: "Accountants for Contractors",
         slug: "contractors",
-        description: "Expert contractor accounting including IR35, limited company, and umbrella support.",
+        description: "Expert contractor accounting including worker classification, 1099 compliance, and LLC setup support.",
     },
     {
         title: "Accountants for Amazon Sellers",
         slug: "amazon-sellers",
-        description: "Specialist eCommerce accounting for Amazon FBA sellers and online retailers.",
+        description: "Specialist eCommerce accounting for Amazon FBA sellers with multi-state sales tax compliance.",
     },
     {
         title: "Accountancy for Retail and eCommerce",
         slug: "retail",
-        description: "Comprehensive accounting for retail shops and eCommerce businesses.",
+        description: "Comprehensive accounting for retail shops and eCommerce businesses with sales tax nexus and multi-state compliance.",
     },
     {
         title: "Accountancy for Professional Services",
         slug: "professional-services",
-        description: "Accounting solutions for consultants, solicitors, and professional service firms.",
+        description: "Accounting solutions for consultants, attorneys, and professional service firms.",
     },
     {
         title: "Accountancy for Personal Care",
@@ -48,6 +48,6 @@ export const sectors: Sector[] = [
     {
         title: "Accountancy for Construction",
         slug: "construction",
-        description: "CIS, subcontractor accounting, and construction industry tax services.",
+        description: "Construction accounting, progress billing, and contractor tax services.",
     },
 ];

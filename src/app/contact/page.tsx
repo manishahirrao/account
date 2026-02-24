@@ -3,7 +3,7 @@
 import { ServiceHero } from "@/components/shared/ServiceHero";
 import { CTABanner } from "@/components/shared/CTABanner";
 import { Footer } from "@/components/layout/Footer";
-import { MapPin, Phone, Mail, Send } from "lucide-react";
+import { MapPin, Mail, Send } from "lucide-react";
 import { companyInfo } from "@/data/footer";
 import { useState } from "react";
 
@@ -102,7 +102,7 @@ export default function ContactPage() {
                                                     setFormState({ ...formState, phone: e.target.value })
                                                 }
                                                 className="w-full px-4 py-2.5 rounded-lg border border-gray-300 text-sm focus:outline-none focus:ring-2 focus:ring-[var(--sage-green)] focus:border-transparent transition-all"
-                                                placeholder="0161 456 9666"
+                                                placeholder="(512) 555-0123"
                                             />
                                         </div>
                                         <div>
@@ -142,8 +142,8 @@ export default function ContactPage() {
                                             <option>Business Advisory</option>
                                             <option>Personal Tax</option>
                                             <option>Payroll</option>
-                                            <option>VAT Services</option>
-                                            <option>Corporation Tax</option>
+                                            <option>Sales Tax Services</option>
+                                            <option>Corporate Income Tax</option>
                                             <option>Other</option>
                                         </select>
                                     </div>
@@ -218,7 +218,7 @@ export default function ContactPage() {
                                             {companyInfo.address}
                                         </span>
                                     </li>
-                                    
+                                   
                                     <li className="flex items-center gap-3">
                                         <Mail className="h-5 w-5 text-[var(--sage-green)] shrink-0" />
                                         <a
@@ -241,7 +241,7 @@ export default function ContactPage() {
                             {/* Opening Hours */}
                             <div className="bg-gray-50 rounded-xl p-6 border border-gray-100">
                                 <h3 className="font-semibold text-gray-900 mb-3">
-                                    Office Hours
+                                    Office Hours (CST)
                                 </h3>
                                 <div className="space-y-2 text-sm text-gray-600">
                                     <div className="flex justify-between">

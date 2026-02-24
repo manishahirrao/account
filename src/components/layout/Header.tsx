@@ -107,14 +107,18 @@ export function Header() {
 
 /* ============== Mega Menu Panel ============== */
 function MegaMenuPanel({ dropdown }: { dropdown: NavDropdown }) {
+    // Determine grid columns based on number of links
+    const gridCols = dropdown.links.length > 4 ? "grid-cols-2" : "grid-cols-1";
+    const width = dropdown.links.length > 4 ? "w-[560px]" : "w-[320px]";
+    
     return (
-        <div className="absolute top-full left-1/2 -translate-x-1/2 w-[540px] bg-white rounded-xl shadow-xl border border-gray-100 p-6 mt-1 z-50">
-            <div className="grid grid-cols-2 gap-x-6 gap-y-2">
+        <div className={`absolute top-full left-1/2 -translate-x-1/2 ${width} bg-white rounded-xl shadow-xl border border-gray-100 p-6 mt-1 z-50`}>
+            <div className={`grid ${gridCols} gap-x-6 gap-y-2`}>
                 {dropdown.links.map((link) => (
                     <Link
                         key={link.href}
                         href={link.href}
-                        className="block px-3 py-2 text-sm text-gray-700 hover:bg-[var(--sage-green-light)] hover:text-[var(--sage-forest)] rounded-md transition-colors"
+                        className="block px-3 py-2.5 text-sm font-medium text-gray-700 hover:bg-[var(--sage-green-light)] hover:text-[var(--sage-forest)] rounded-md transition-colors"
                     >
                         {link.name}
                     </Link>

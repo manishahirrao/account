@@ -20,7 +20,7 @@ export const navItems: NavItem[] = [
     {
         name: "About IN",
         description:
-            "IN Accountancy are a team of Stockport accountants with a difference… Saving you money. Giving you great value. Making your life easier.",
+            "IN Accountancy is a team of Austin accountants with a difference… Saving you money. Giving you great value. Making your life easier.",
         links: [
             { name: "About Us", href: "/about" },
            
@@ -29,7 +29,7 @@ export const navItems: NavItem[] = [
     {
         name: "For Businesses",
         description:
-            "IN Accountancy are a team of Stockport accountants and tax advisors with a difference… Saving you money. Giving you great value. Making your life easier.",
+            "IN Accountancy is a team of Austin accountants and tax advisors with a difference… Saving you money. Giving you great value. Making your life easier.",
         links: [
             { name: "Business Accounting", href: "/services/business-accounting" },
          
@@ -38,7 +38,7 @@ export const navItems: NavItem[] = [
     {
         name: "For Individuals",
         description:
-            "Personal tax services, tax reclaims, and self assessment support.",
+            "Personal tax services, tax reclaims, and tax filing support.",
         links: [
             { name: "Personal Tax", href: "/services/personal-tax" },
            
@@ -49,11 +49,11 @@ export const navItems: NavItem[] = [
         description:
             "Explore our range of Sage business management solutions — ERP, financial management, CRM, and expert support services.",
         links: [
+            { name: "Sage 50", href: "/sage-50" },
             { name: "Sage 300", href: "/sage-300" },
             { name: "Sage X3", href: "/sage-x3" },
             { name: "Sage Intacct", href: "/sage-intacct" },
             { name: "Sage CRM", href: "/sage-crm" },
-            { name: "Sage Support", href: "/sage-support" },
         ],
     },
     

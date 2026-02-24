@@ -12,7 +12,7 @@ interface CTABannerProps {
 export function CTABanner({
     title = "Ready to take the stress out of your accounting?",
    
-    email = "askus@in-accountancy.co.uk",
+    email = "askus@in-accountancy.com",
     ctaText = "Book a FREE consultation call",
     ctaLink = "/contact",
 }: CTABannerProps) {

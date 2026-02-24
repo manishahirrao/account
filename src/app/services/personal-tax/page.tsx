@@ -4,12 +4,12 @@ import { ServiceHero } from "@/components/shared/ServiceHero";
 import { ValuesSection } from "@/components/home/ValuesSection";
 import { CTABanner } from "@/components/shared/CTABanner";
 import { Footer } from "@/components/layout/Footer";
-import { CheckCircle2, Phone, Mail, ArrowRight } from "lucide-react";
+import { CheckCircle2, Mail, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
-    title: "Personal Tax Accounting Services | Tax Advisor Stockport",
+    title: "Personal Tax Accounting Services | Tax Advisor Austin",
     description:
-        "Looking for a personal tax accountant in Stockport? IN Accountancy provides tax reclaims, self assessment returns, and expert tax advice.",
+        "Looking for a personal tax accountant in Austin? IN Accountancy provides tax reclaims, federal and state tax returns, and expert tax advice.",
 };
 
 const services = [
@@ -48,7 +48,7 @@ export default function PersonalTaxPage() {
                                 everything.
                             </h2>
                             <p className="text-gray-600 leading-relaxed mb-8">
-                                Whether you need help completing your self assessment tax
+                                Whether you need help completing your federal and state tax
                                 return, claiming tax refunds, or just want expert advice on
                                 minimising your tax liability, our team of personal tax
                                 specialists are here to help. We make the process simple and
@@ -105,18 +105,11 @@ export default function PersonalTaxPage() {
                                 </Link>
                                 <div className="mt-4 space-y-2 text-sm">
                                     <a
-                                        href="tel:+441614569666"
-                                        className="flex items-center gap-2 text-gray-300 hover:text-white transition-colors"
-                                    >
-                                        <Phone className="h-4 w-4" />
-                                        0161 456 9666
-                                    </a>
-                                    <a
-                                        href="mailto:askus@in-accountancy.co.uk"
+                                        href="mailto:askus@in-accountancy.com"
                                         className="flex items-center gap-2 text-gray-300 hover:text-white transition-colors"
                                     >
                                         <Mail className="h-4 w-4" />
-                                        askus@in-accountancy.co.uk
+                                        askus@in-accountancy.com
                                     </a>
                                 </div>
                             </div>
@@ -127,18 +120,15 @@ export default function PersonalTaxPage() {
                                 </h3>
                                 <ul className="space-y-2">
                                     {[
-                                        { name: "Self Assessment", href: "/services/self-assessment" },
-                                        { name: "Business Accounting", href: "/services/business-accounting" },
-                                        { name: "Tax Planning", href: "/services/tax-planning" },
+                                        "Tax Filing",
+                                        "Business Accounting",
+                                        "Tax Planning",
                                     ].map((s) => (
-                                        <li key={s.name}>
-                                            <Link
-                                                href={s.href}
-                                                className="flex items-center gap-2 text-sm text-gray-600 hover:text-[var(--sage-green)] transition-colors py-1"
-                                            >
+                                        <li key={s}>
+                                            <span className="flex items-center gap-2 text-sm text-gray-600 py-1">
                                                 <ArrowRight className="h-3.5 w-3.5" />
-                                                {s.name}
-                                            </Link>
+                                                {s}
+                                            </span>
                                         </li>
                                     ))}
                                 </ul>

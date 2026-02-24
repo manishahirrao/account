@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { motion } from "framer-motion";
 import { serviceColumns } from "@/data/services";
 
@@ -23,18 +22,9 @@ export function ServicesListing() {
                                 <ul className="space-y-2.5">
                                     {column.items.map((item) => (
                                         <li key={item.name}>
-                                            {item.href ? (
-                                                <Link
-                                                    href={item.href}
-                                                    className="text-sm text-gray-600 hover:text-[var(--sage-green)] hover:pl-1 transition-all duration-200"
-                                                >
-                                                    {item.name}
-                                                </Link>
-                                            ) : (
-                                                <span className="text-sm text-gray-600">
-                                                    {item.name}
-                                                </span>
-                                            )}
+                                            <span className="text-sm text-gray-600">
+                                                {item.name}
+                                            </span>
                                         </li>
                                     ))}
                                 </ul>

@@ -20,7 +20,7 @@ export function SolutionsGrid() {
                         IN Accountancy Solutions
                     </h2>
                     <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
-                        IN-Accountancy is a team of Stockport accountants with a
+                        IN Accountancy is a team of Austin accountants with a
                         difference… Saving you money. Giving you great value. Making your
                         life easier.
                     </p>

@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Award, Shield, Star } from "lucide-react";
+import { Star } from "lucide-react";
 
 export function AwardSection() {
     return (
@@ -15,7 +15,7 @@ export function AwardSection() {
                     className="max-w-4xl mx-auto text-center"
                 >
                     <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                        Award Winning Stockport Accountancy Services
+                        Award Winning Austin Accountancy Services
                     </h2>
                     <p className="mt-6 text-lg text-gray-600 leading-relaxed">
                         IN Accountancy helps entrepreneurs and individuals pay as little
@@ -34,25 +34,16 @@ export function AwardSection() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.5, delay: 0.2 }}
-                    className="mt-12 flex flex-wrap justify-center gap-8 md:gap-12"
+                    className="mt-12 flex justify-center"
                 >
-                    {[
-                        { icon: Award, label: "Xero Gold Partner" },
-                        { icon: Shield, label: "Planet Mark Certified" },
-                        { icon: Star, label: "5★ Google Reviews" },
-                    ].map(({ icon: Icon, label }) => (
-                        <div
-                            key={label}
-                            className="flex flex-col items-center gap-3 px-6 py-4 rounded-xl bg-gray-50 border border-gray-100"
-                        >
-                            <div className="w-12 h-12 rounded-full bg-[var(--sage-green-light)] flex items-center justify-center">
-                                <Icon className="h-6 w-6 text-[var(--sage-emerald)]" />
-                            </div>
-                            <span className="text-sm font-semibold text-gray-700">
-                                {label}
-                            </span>
+                    <div className="flex flex-col items-center gap-3 px-6 py-4 rounded-xl bg-gray-50 border border-gray-100">
+                        <div className="w-12 h-12 rounded-full bg-[var(--sage-green-light)] flex items-center justify-center">
+                            <Star className="h-6 w-6 text-[var(--sage-emerald)]" />
                         </div>
-                    ))}
+                        <span className="text-sm font-semibold text-gray-700">
+                            5★ Google Reviews
+                        </span>
+                    </div>
                 </motion.div>
             </div>
         </section>

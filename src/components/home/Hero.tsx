@@ -36,7 +36,7 @@ export function Hero() {
                     >
                         Straight-talking accounting and tax advice for businesses across{" "}
                         <span className="text-[var(--sage-green)]">
-                            Stockport, Cheshire & Greater Manchester
+                            Austin, Texas & the Greater Austin Area
                         </span>
                     </motion.h1>
 
@@ -46,11 +46,10 @@ export function Hero() {
                         transition={{ duration: 0.6, delay: 0.2 }}
                         className="mt-6 text-lg text-gray-300 leading-relaxed max-w-2xl"
                     >
-                        IN Accountancy are award-winning accountants based in Stockport.
-                        We&apos;re local qualified accountants serving small &amp; medium
-                        sized businesses, entrepreneurs and individuals in Greater
-                        Manchester, Hazel Grove, Bramhall, Poynton, Cheadle Hulme, Cheshire
-                        and across the UK.
+                        IN Accountancy are award-winning accountants based in Austin.
+                        We&apos;re local qualified CPAs serving small &amp; medium
+                        sized businesses, entrepreneurs and individuals in Austin, Round Rock, 
+                        Cedar Park, Georgetown, and across Texas.
                     </motion.p>
 
                     <motion.div
@@ -80,7 +79,7 @@ export function Hero() {
                         className="mt-8 flex flex-wrap gap-6 text-sm text-gray-300"
                     >
                         {[
-                            "Xero Gold Partner",
+                            "QuickBooks ProAdvisor",
                             "Fixed Fees",
                             "Proactive Advice",
                         ].map((item) => (

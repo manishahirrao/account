@@ -1,10 +1,7 @@
 import {
     FileText,
     Briefcase,
-    Building2,
-    BookOpen,
-    Phone,
-    Newspaper,
+    Package,
     type LucideIcon,
 } from "lucide-react";
 
@@ -29,10 +26,10 @@ export const solutionCards: SolutionCard[] = [
         href: "/services/business-accounting",
     },
     {
-        icon: Building2,
-        title: "Sectors",
-        subtitle: "Specialised Accounting",
-        href: "/sectors",
+        icon: Package,
+        title: "Sage Products",
+        subtitle: "Business Management Solutions",
+        href: "/sage-300",
     },
     
 ];
@@ -49,10 +46,10 @@ export const serviceColumns: ServiceColumn[] = [
             { name: "Business Accounting", href: "/services/business-accounting" },
             { name: "Bookkeeping", href: "/services/business-accounting" },
             { name: "Payroll", href: "/services/payroll" },
-            { name: "CIS Returns" },
-            { name: "VAT Returns", href: "/services/vat-services" },
-            { name: "Accounts & Corporation Tax", href: "/services/corporation-tax" },
-            { name: "P11D's" },
+            { name: "1099 Forms" },
+            { name: "Sales Tax Returns", href: "/services/sales-tax" },
+            { name: "Corporate Income Tax", href: "/services/corporate-tax" },
+            { name: "W-2 Forms" },
         ],
     },
     {
@@ -70,7 +67,7 @@ export const serviceColumns: ServiceColumn[] = [
         title: "Personal Tax",
         items: [
             { name: "Personal Tax", href: "/services/personal-tax" },
-            { name: "Personal & Partnership Tax Returns" },
+            { name: "Federal & State Tax Returns" },
             { name: "Tax Claims" },
         ],
     },
