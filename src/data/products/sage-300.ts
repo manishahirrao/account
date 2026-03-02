@@ -135,6 +135,30 @@ export const sage300Data: ProductPageData = {
         company: "Simpli Home",
         metric: "6 countries, multiple currencies managed seamlessly",
       },
+      {
+        quote:
+          "Alkan Air has other requirements beyond just a finance software system. The ability to connect Sage to both our dispatch and quoting system, and to the back-end (which is our parts and inventory system) is extremely valuable to us.",
+        author: "Wendy Tayler",
+        role: "President and CEO",
+        company: "Alkan Air Ltd.",
+        metric: "Complete system integration achieved",
+      },
+      {
+        quote:
+          "We needed to do everything better — financial reporting, AP processing, inventory control, procurement, and supply chain management. QuickBooks wasn't cutting it, so we made the move to Sage 300.",
+        author: "Carrie Magee",
+        role: "VP of Finance",
+        company: "Ignite",
+        metric: "Complete business transformation",
+      },
+      {
+        quote:
+          "We can now get financial reports in a reasonable amount of time. It was often twenty days before we'd be done with month end close, and now twenty days is just outrageous. Now our goal is ten days and it's sometimes shorter.",
+        author: "Lisa Cervantez",
+        role: "Financial Services Manager",
+        company: "PS Lightwave",
+        metric: "Month-end close reduced from 20 to 10 days",
+      },
     ],
     ctaText: "See How We Can Help",
     ctaHref: "/contact",

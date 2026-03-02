@@ -15,6 +15,7 @@ import {
   Zap,
   Brain,
   Workflow,
+  Calculator,
 } from "lucide-react";
 import { ProductPageData } from "./types";
 
@@ -30,10 +31,10 @@ export const sageX3Data: ProductPageData = {
   ],
   hero: {
     title: "Sage X3",
-    tagline: "End-to-End Business Management",
+    tagline: "A Powerful ERP for Business Profitability",
     description: [
-      "Sage X3 is a comprehensive enterprise resource planning (ERP) solution designed for managing every area of your business from one centralized platform. Plan your finances in real time, stay compliant, and automate your accounting processes. Take control of your supply chain management when it comes to inventory, procurement, and logistics. Optimize how you oversee manufacturing processes, production, and quality control.",
-      "With AI-powered productivity features, flexible mobile access, and role-based insights, Sage X3 empowers your team to make decisions quicker and work more efficiently. The solution is highly configurable to your specific business operations, allowing you to tailor it to your industry-specific needs, add APIs or custom apps, and integrate with other solutions for an experience that you can shape.",
+      "Sage X3 ERP provides an advanced solution to collate all your business operations flexibly. It is a leading and trusted technology implemented in various industries to manage everyday core business operations. Sage X3 is a powerhouse for agile, flexible, efficient, cost-effective and profitable business management solution with the best record of providing outstanding service to midsize to large companies.",
+      "Implementing Sage X3 ERP system helps a business to achieve a seamless and efficient workflow of business processes. From procuring raw materials from vendors to producing finished products, storing products in the warehouse, handling sales, and building robust customer relationships—Sage X3 makes your business processes lightning-fast with comprehensive insights into company performance on a single platform.",
     ],
     primaryCTA: {
       text: "Schedule Product Demo",
@@ -44,68 +45,68 @@ export const sageX3Data: ProductPageData = {
       href: "/contact",
     },
     stats: [
-      { label: "Business Processes", value: "All", icon: Layers },
-      { label: "Mobile Access", value: "Yes", icon: Smartphone },
-      { label: "AI-Powered", value: "Yes", icon: Brain },
-      { label: "Configurable", value: "100%", icon: Settings },
+      { label: "Cloud Access", value: "24/7", icon: Smartphone },
+      { label: "Implementation", value: "Quick", icon: Zap },
+      { label: "Customizable", value: "100%", icon: Settings },
+      { label: "Company Size", value: "Mid-Large", icon: Building2 },
     ],
   },
   features: {
-    sectionTag: "Core Capabilities",
-    heading: "Manage Every Area of Your Business",
+    sectionTag: "Core Modules",
+    heading: "Core Modules of Sage X3 ERP",
     subheading:
-      "Sage X3 provides end-to-end business management with powerful features for every department.",
+      "Discover the best-in-class features and support system for your business.",
     features: [
       {
-        icon: Layers,
-        title: "End-to-End Business Management",
+        icon: Package,
+        title: "Supply Chain Management",
         description:
-          "All your business processes can be managed and configured from one place. Plan your finances in real time, stay compliant, and automate your accounting. Take control of your supply chain management when it comes to inventory, procurement, and logistics. Optimize how you oversee manufacturing processes, production, and quality control.",
+          "Monitor your inventory in real-time. Keep up with consumer demand by ensuring that the stock never falls below the set threshold. Control costs with this ERP Software. Includes inventory management, customer service, purchasing, and sales management.",
       },
       {
-        icon: Users,
-        title: "Improved Collaboration",
+        icon: Calculator,
+        title: "Financial Management",
         description:
-          "Manage workflows across multiple teams and sites with seamless coordination. Bring your services together with processes that run smoothly alongside one another. Enable cross-functional collaboration with shared data and unified workflows that break down departmental silos.",
-      },
-      {
-        icon: BarChart3,
-        title: "Role-Based Insights",
-        description:
-          "Get personalized access to relevant data with clear visualization tailored to your role. View and share a full overview of your data, helping your team make decisions quicker. Deep dive into details when needed with drill-down capabilities and customizable dashboards.",
-      },
-      {
-        icon: Smartphone,
-        title: "Flexible Mobile Solution",
-        description:
-          "Planning on the move has never been easier. A simple cloud and mobile solution allows you to access your information anytime, anywhere. Stay connected to your business with responsive mobile interfaces designed for productivity on any device.",
+          "Manage your bottom line accurately with real-time global visibility. Meet local demands with great precision. Includes fixed asset management, budgets & accounting, and financial reporting.",
       },
       {
         icon: Settings,
-        title: "Configurable to Your Needs",
+        title: "Production Management",
         description:
-          "Extend software to adapt to your specific business operations. Tailor to your industry-specific needs and legal requirements, add APIs or custom apps, and integrate with other solutions for an experience that you can shape. Future-proof your investment with a flexible platform.",
+          "Accelerate production manufacturing speed and introduce new products to markets quickly. Includes shop floor control, project management, BOM planning, and quality control.",
       },
       {
-        icon: Brain,
-        title: "AI-Powered Productivity",
+        icon: Shield,
+        title: "Total Control & Visibility",
         description:
-          "Embedded AI acts as your personal assistant to deliver automated insights and predictive analytics. Leverage machine learning to optimize inventory levels, forecast demand, identify trends, and automate routine tasks. Make smarter decisions faster with AI-driven recommendations.",
+          "Sage X3 ERP adapts to users' preferences, distinctive roles and provides safe and secure mobile and cloud access to the data they need. It consists of multiple tools that simplify your company's processes and software infrastructure, giving you total control of your business enterprise.",
+      },
+      {
+        icon: Zap,
+        title: "Powerful and Convenient",
+        description:
+          "Sage X3 ERP application software is specially customized for mid-sized companies, allowing them to take full advantage of all its capabilities at the most affordable rates. It's quick, easy to implement, simple to use, and easily customizable.",
+      },
+      {
+        icon: Workflow,
+        title: "Embraces Different Technologies",
+        description:
+          "Sage X3 ERP has an open architecture that can work well with all the leading technologies efficiently. It is flexible and extensive to embrace plugins and third-party systems, which is more beneficial for your business efficiency.",
       },
     ],
   },
   benefits: {
     sectionTag: "Why Sage X3",
-    heading: "Benefits That Transform Operations",
+    heading: "Benefits of Sage X3 ERP",
     benefits: [
-      "Complete end-to-end business management from one centralized platform",
-      "Real-time financial planning with automated compliance and accounting",
-      "AI-powered productivity with automated insights and predictive analytics",
-      "Flexible mobile solution for access anytime, anywhere",
-      "Highly configurable to your specific business operations and industry needs",
-      "Role-based insights with personalized dashboards and data visualization",
-      "Improved collaboration across multiple teams and sites",
-      "Seamless integration with APIs, custom apps, and other solutions",
+      "Total control & visibility with safe and secure mobile and cloud access",
+      "Powerful and convenient—customized for mid-sized companies at affordable rates",
+      "Smooth and quicker workflow from procurement to customer relationships",
+      "Embraces different technologies with open architecture for plugins and third-party systems",
+      "Flexible and agile—manage everything on the cloud from anywhere, anytime",
+      "Quick and easy to implement, simple to use, and easily customizable",
+      "Comprehensive insights into company performance on a single platform",
+      "Central repository for all critical business data with complete IT control",
     ],
     visualContent: {
       title: "Transform Your Operations",
@@ -173,25 +174,25 @@ export const sageX3Data: ProductPageData = {
   },
   industries: {
     sectionTag: "Industries We Serve",
-    heading: "Trusted Across Industries",
+    heading: "Top Sage X3 ERP Industries",
     subheading:
-      "Sage X3 powers businesses across diverse sectors with industry-specific solutions.",
+      "Explore how Sage X3 serves each industry with specialized solutions.",
     industries: [
-      { name: "Manufacturing", icon: Building2 },
       { name: "Distribution", icon: Package },
-      { name: "Retail", icon: Store },
-      { name: "Professional Services", icon: Briefcase },
+      { name: "Services", icon: Briefcase },
+      { name: "Manufacturing", icon: Building2 },
+      { name: "Chemicals", icon: Shield },
       { name: "Food & Beverage", icon: Store },
-      { name: "Wholesale", icon: Warehouse },
-      { name: "Import/Export", icon: Globe },
-      { name: "Pharmaceuticals", icon: Shield },
+      { name: "Retail Trade", icon: Store },
+      { name: "Transportation", icon: Package },
+      { name: "Wholesale Trade", icon: Warehouse },
     ],
   },
   ctas: [
     {
-      title: "Need a solution for managing every area of your business?",
+      title: "Take Your Business Control with Sage X3 ERP",
       description:
-        "Discover how Sage X3 can transform your operations with end-to-end business management, AI-powered insights, and flexible mobile access.",
+        "Empower your team and elevate your results with ERP software. Gear up your business operations with Sage X3.",
       primaryCTA: {
         text: "Schedule a Demo",
         href: "/contact",
