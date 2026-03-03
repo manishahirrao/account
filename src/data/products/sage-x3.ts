@@ -44,6 +44,10 @@ export const sageX3Data: ProductPageData = {
       text: "Get a Free Quote",
       href: "/contact",
     },
+    heroImage: {
+      src: "/sage-x3-hero.png",
+      alt: "Sage X3 ERP Enterprise Management System",
+    },
     stats: [
       { label: "Cloud Access", value: "24/7", icon: Smartphone },
       { label: "Implementation", value: "Quick", icon: Zap },
@@ -170,6 +174,19 @@ export const sageX3Data: ProductPageData = {
           "Integrate with leading BI tools for advanced analytics and reporting capabilities.",
         icon: BarChart3,
       },
+    ],
+  },
+  dashboard: {
+    title: "Confidently Get on Board with Us",
+    description:
+      "Discover the best-in-class features and support system for your business. Sage X3 provides comprehensive insights into company performance on a single platform.",
+    imageSrc: "/sage-x3-dashboard.png", // Placeholder - add actual image later
+    imageAlt: "Sage X3 ERP Dashboard",
+    features: [
+      "Real-time business insights",
+      "Customizable dashboards",
+      "Mobile and cloud access",
+      "Comprehensive reporting",
     ],
   },
   industries: {

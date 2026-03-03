@@ -42,6 +42,10 @@ export const sage50Data: ProductPageData = {
       text: "Get a Free Quote",
       href: "/contact",
     },
+    heroImage: {
+      src: "/sage-50-hero.svg",
+      alt: "Sage 50 Cloud Accounting Software Dashboard",
+    },
     stats: [
       { label: "Years Experience", value: "40+", icon: Clock },
       { label: "Customers", value: "2M+", icon: Users },

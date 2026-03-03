@@ -3,6 +3,7 @@ import { ProductHero } from "@/components/products/ProductHero";
 import { FeatureGrid } from "@/components/products/FeatureGrid";
 import { BenefitsSection } from "@/components/products/BenefitsSection";
 import { TestimonialSection } from "@/components/products/TestimonialSection";
+import { DashboardVisual } from "@/components/products/DashboardVisual";
 import { IntegrationSection } from "@/components/products/IntegrationSection";
 import { IndustryGrid } from "@/components/products/IndustryGrid";
 import { CTASection } from "@/components/products/CTASection";
@@ -22,6 +23,9 @@ export default function SageX3Page() {
       <BenefitsSection data={sageX3Data.benefits} />
       {sageX3Data.testimonials && (
         <TestimonialSection data={sageX3Data.testimonials} />
+      )}
+      {sageX3Data.dashboard && (
+        <DashboardVisual data={sageX3Data.dashboard} />
       )}
       {sageX3Data.integrations && (
         <IntegrationSection data={sageX3Data.integrations} />

@@ -43,6 +43,10 @@ export const sageCRMData: ProductPageData = {
       text: "Get a Free Quote",
       href: "/contact",
     },
+    heroImage: {
+      src: "/sage-crm-hero.png",
+      alt: "Sage CRM Customer Relationship Management",
+    },
     stats: [
       { label: "Customer View", value: "360°", icon: Target },
       { label: "Mobile Access", value: "Yes", icon: Smartphone },

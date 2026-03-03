@@ -1,0 +1,6 @@
+PLACEHOLDER: Add Sage Support Hero Image Here
+File name: sage-support-hero.png
+Description: Hero image showing Sage Support Services and Expert Training
+Suggested content: Support team helping customer, training session, or customer success visualization
+Recommended size: 600x400px or 1200x800px
+Style: Friendly, supportive, showing expert guidance and customer care

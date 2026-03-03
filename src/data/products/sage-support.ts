@@ -43,6 +43,10 @@ export const sageSupportData: ProductPageData = {
       text: "Schedule Training",
       href: "/contact",
     },
+    heroImage: {
+      src: "/sage-support-hero.jpg",
+      alt: "Sage Support Services and Training",
+    },
     stats: [
       { label: "Response Time", value: "<1hr", icon: Clock },
       { label: "Certified Experts", value: "15+", icon: Award },

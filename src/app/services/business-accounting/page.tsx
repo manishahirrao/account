@@ -69,7 +69,7 @@ export default function BusinessAccountingPage() {
                                 all the difference.
                             </h2>
                             <p className="text-gray-600 leading-relaxed mb-8">
-                                A digital accounting specialist and QuickBooks ProAdvisor, IN
+                                A digital accounting specialist, IN
                                 Accountancy has a solution for all your small business needs.
                                 From bookkeeping to corporate accounts; personal and
                                 partnership tax; to payroll. From filing your sales tax returns, to

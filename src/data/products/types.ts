@@ -12,6 +12,10 @@ export interface ProductHeroData {
     text: string;
     href: string;
   };
+  heroImage?: {
+    src: string;
+    alt: string;
+  };
   stats: Array<{
     label: string;
     value: string;

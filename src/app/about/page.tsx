@@ -41,15 +41,42 @@ export default function AboutPage() {
                                     </p>
                                     <p>
                                         IN Accountancy are digital accounting experts and are cloud
-                                        accounting specialists in software such as QuickBooks, Xero,
+                                        accounting specialists in software such as Xero,
                                         FreshBooks and Sage.
                                     </p>
                                 </div>
                             </div>
-                            <div className="relative aspect-square bg-gradient-to-br from-[var(--sage-forest)] to-[var(--sage-emerald)] rounded-2xl flex items-center justify-center shadow-xl">
-                                <span className="text-white/60 font-medium">
-                                    Team Photo
-                                </span>
+                            <div className="relative rounded-2xl bg-gradient-to-br from-[var(--sage-forest)] to-[var(--sage-emerald)] p-8 shadow-xl">
+                                <div className="space-y-6">
+                                    <div className="text-center">
+                                        <div className="text-5xl font-bold text-white mb-2">20+</div>
+                                        <div className="text-white/80 text-sm">Years of Experience</div>
+                                    </div>
+                                    <div className="grid grid-cols-2 gap-4">
+                                        <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 text-center">
+                                            <div className="text-3xl font-bold text-white mb-1">500+</div>
+                                            <div className="text-white/70 text-xs">Happy Clients</div>
+                                        </div>
+                                        <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 text-center">
+                                            <div className="text-3xl font-bold text-white mb-1">98%</div>
+                                            <div className="text-white/70 text-xs">Satisfaction Rate</div>
+                                        </div>
+                                        <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 text-center">
+                                            <div className="text-3xl font-bold text-white mb-1">24/7</div>
+                                            <div className="text-white/70 text-xs">Support Available</div>
+                                        </div>
+                                        <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 text-center">
+                                            <div className="text-3xl font-bold text-white mb-1">100%</div>
+                                            <div className="text-white/70 text-xs">Cloud-Based</div>
+                                        </div>
+                                    </div>
+                                    <div className="pt-4 border-t border-white/20">
+                                        <div className="flex items-center justify-center gap-2 text-white/90">
+                                            <span className="text-2xl">🏆</span>
+                                            <span className="text-sm font-medium">Award-Winning Service</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -60,7 +87,7 @@ export default function AboutPage() {
             <section className="py-12 bg-gray-50 border-y border-gray-100">
                 <div className="container mx-auto px-4 md:px-6">
                     <div className="flex flex-wrap items-center justify-center gap-8 md:gap-16 text-gray-400">
-                        {["QuickBooks", "Xero", "FreshBooks", "Sage"].map((name) => (
+                        {["Xero", "FreshBooks", "Sage"].map((name) => (
                             <div
                                 key={name}
                                 className="text-lg font-bold tracking-wider uppercase opacity-50"

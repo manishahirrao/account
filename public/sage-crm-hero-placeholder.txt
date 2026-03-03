@@ -1,0 +1,6 @@
+PLACEHOLDER: Add Sage CRM Hero Image Here
+File name: sage-crm-hero.png
+Description: Hero image showing Sage CRM Customer Relationship Management Software
+Suggested content: Screenshot of Sage CRM dashboard, customer pipeline, or sales analytics
+Recommended size: 600x400px or 1200x800px
+Style: Customer-focused, showing relationship management and sales automation

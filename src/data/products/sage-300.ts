@@ -44,6 +44,10 @@ export const sage300Data: ProductPageData = {
       text: "Get a Free Quote",
       href: "/contact",
     },
+    heroImage: {
+      src: "/sage-300-hero.jpg",
+      alt: "Sage 300 ERP Business Management Software",
+    },
     stats: [
       { label: "Cloud Migration", value: "1 Day", icon: Cloud },
       { label: "Multi-Currency", value: "Yes", icon: Globe },
@@ -145,7 +149,7 @@ export const sage300Data: ProductPageData = {
       },
       {
         quote:
-          "We needed to do everything better — financial reporting, AP processing, inventory control, procurement, and supply chain management. QuickBooks wasn't cutting it, so we made the move to Sage 300.",
+          "We needed to do everything better — financial reporting, AP processing, inventory control, procurement, and supply chain management. Our previous system wasn't cutting it, so we made the move to Sage 300.",
         author: "Carrie Magee",
         role: "VP of Finance",
         company: "Ignite",
@@ -162,6 +166,19 @@ export const sage300Data: ProductPageData = {
     ],
     ctaText: "See How We Can Help",
     ctaHref: "/contact",
+  },
+  dashboard: {
+    title: "Unlock secrets from top finance leaders",
+    description:
+      "Discover the strategies and best practices top financial leaders use to be more strategic and impactful in leading their organizations.",
+    imageSrc: "/sage-300-dashboard.png", // Placeholder - add actual image later
+    imageAlt: "Sage 300 Dashboard - CFO and AP Dashboards",
+    features: [
+      "Chief Financial Officer Dashboard",
+      "Accounts Payable Dashboard",
+      "Real-time financial insights",
+      "Customizable reporting views",
+    ],
   },
   integrations: {
     sectionTag: "Integrations",

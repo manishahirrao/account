@@ -1,0 +1,6 @@
+PLACEHOLDER: Add Sage 300 Hero Image Here
+File name: sage-300-hero.png
+Description: Hero image showing Sage 300 ERP Business Management Software
+Suggested content: Screenshot of Sage 300 interface, multi-currency dashboard, or global business visualization
+Recommended size: 600x400px or 1200x800px
+Style: Enterprise-level, professional, showing multi-entity/multi-currency capabilities

@@ -1,0 +1,6 @@
+PLACEHOLDER: Add Sage 50 Hero Image Here
+File name: sage-50-hero.png
+Description: Hero image showing Sage 50 Cloud Accounting Software interface or dashboard
+Suggested content: Screenshot of Sage 50 dashboard, laptop with software open, or professional using the software
+Recommended size: 600x400px or 1200x800px
+Style: Professional, clean, showing the software in action

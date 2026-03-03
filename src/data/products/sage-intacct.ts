@@ -44,6 +44,10 @@ export const sageIntacctData: ProductPageData = {
       text: "Get a Free Quote",
       href: "/contact",
     },
+    heroImage: {
+      src: "/sage-intacct-hero.png",
+      alt: "Sage Intacct Cloud Financial Management Software",
+    },
     stats: [
       { label: "Cloud-Native", value: "100%", icon: Cloud },
       { label: "AI Agents", value: "5+", icon: Zap },

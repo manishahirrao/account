@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ProductHeroData } from "@/data/products/types";
 
 interface ProductHeroProps {
@@ -39,30 +40,51 @@ export function ProductHero({ data }: ProductHeroProps) {
             </div>
           </div>
 
-          {/* Statistics */}
-          {data.stats.length > 0 && (
-            <div className="grid grid-cols-2 gap-6">
-              {data.stats.map((stat, index) => {
-                const Icon = stat.icon;
-                return (
-                  <div
-                    key={index}
-                    className="bg-white/10 backdrop-blur-sm rounded-lg p-6 text-center"
-                  >
-                    {Icon && (
-                      <div className="flex justify-center mb-3">
-                        <Icon className="w-8 h-8" />
+          {/* Hero Image or Statistics */}
+          <div>
+            {data.heroImage ? (
+              <div className="relative rounded-lg overflow-hidden shadow-2xl">
+                <Image
+                  src={data.heroImage.src}
+                  alt={data.heroImage.alt}
+                  width={600}
+                  height={400}
+                  className="w-full h-auto"
+                  priority
+                />
+              </div>
+            ) : data.stats.length > 0 ? (
+              <div className="grid grid-cols-2 gap-6">
+                {data.stats.map((stat, index) => {
+                  const Icon = stat.icon;
+                  return (
+                    <div
+                      key={index}
+                      className="bg-white/10 backdrop-blur-sm rounded-lg p-6 text-center"
+                    >
+                      {Icon && (
+                        <div className="flex justify-center mb-3">
+                          <Icon className="w-8 h-8" />
+                        </div>
+                      )}
+                      <div className="text-3xl md:text-4xl font-bold mb-2">
+                        {stat.value}
                       </div>
-                    )}
-                    <div className="text-3xl md:text-4xl font-bold mb-2">
-                      {stat.value}
+                      <div className="text-sm text-white/80">{stat.label}</div>
                     </div>
-                    <div className="text-sm text-white/80">{stat.label}</div>
-                  </div>
-                );
-              })}
-            </div>
-          )}
+                  );
+                })}
+              </div>
+            ) : (
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-12 text-center">
+                <div className="space-y-4">
+                  <div className="h-8 bg-white/20 rounded w-3/4 mx-auto"></div>
+                  <div className="h-4 bg-white/10 rounded w-full"></div>
+                  <div className="h-4 bg-white/10 rounded w-5/6 mx-auto"></div>
+                </div>
+              </div>
+            )}
+          </div>
         </div>
       </div>
     </section>

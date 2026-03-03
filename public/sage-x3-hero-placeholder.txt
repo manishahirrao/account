@@ -1,0 +1,6 @@
+PLACEHOLDER: Add Sage X3 Hero Image Here
+File name: sage-x3-hero.png
+Description: Hero image showing Sage X3 ERP Software for Business Profitability
+Suggested content: Screenshot of Sage X3 dashboard, manufacturing/supply chain visualization, or business analytics
+Recommended size: 600x400px or 1200x800px
+Style: Modern, powerful, showing comprehensive business management capabilities
