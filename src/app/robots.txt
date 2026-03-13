@@ -1,0 +1,24 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://sagex.pro/sitemap.xml
+
+# Disallow admin and private areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /.next/
+Disallow: /api/
+
+# Allow important pages
+Allow: /
+Allow: /about
+Allow: /contact
+Allow: /services/
+Allow: /sage-300
+Allow: /sage-50
+Allow: /sage-x3
+Allow: /sage-intacct
+Allow: /sage-crm
+Allow: /sage-support
+Allow: /sectors

@@ -1,5 +1,6 @@
 "use client";
 
+import type { Metadata } from "next";
 import Link from "next/link";
 import { ServiceHero } from "@/components/shared/ServiceHero";
 import { CTABanner } from "@/components/shared/CTABanner";
@@ -7,6 +8,17 @@ import { Footer } from "@/components/layout/Footer";
 import { ArrowRight } from "lucide-react";
 import { sectors } from "@/data/sectors";
 import { motion } from "framer-motion";
+
+// Note: This metadata won't work in client components, move to a server component wrapper if needed
+const sectorsMetadata: Metadata = {
+  title: "Industry Sectors | IN Accountancy Austin",
+  description: "Specialist accounting services for different industries. IN Accountancy provides tailored solutions for various business sectors in Austin, Texas.",
+  openGraph: {
+    title: "Industry Sectors | IN Accountancy Austin", 
+    description: "Specialist accounting services for different industries in Austin, Texas.",
+    type: "website",
+  },
+};
 
 export default function SectorsPage() {
     return (

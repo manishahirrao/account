@@ -1,11 +1,23 @@
 "use client";
 
+import type { Metadata } from "next";
 import { ServiceHero } from "@/components/shared/ServiceHero";
 import { CTABanner } from "@/components/shared/CTABanner";
 import { Footer } from "@/components/layout/Footer";
 import { MapPin, Mail, Send } from "lucide-react";
 import { companyInfo } from "@/data/footer";
 import { useState } from "react";
+
+// Note: This metadata won't work in client components, move to a server component wrapper if needed
+const contactMetadata: Metadata = {
+  title: "Contact Us | IN Accountancy Austin",
+  description: "Contact IN Accountancy for expert accounting and tax services in Austin, Texas. Get in touch for business accounting, personal tax, and Sage software support.",
+  openGraph: {
+    title: "Contact Us | IN Accountancy Austin",
+    description: "Contact IN Accountancy for expert accounting and tax services in Austin, Texas.",
+    type: "website",
+  },
+};
 
 export default function ContactPage() {
     const [formState, setFormState] = useState({
