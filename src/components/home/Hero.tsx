@@ -4,8 +4,12 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { CheckCircle2 } from "lucide-react";
+import { useState } from "react";
+import { ConsultationModal } from "@/components/ConsultationModal";
 
 export function Hero() {
+    const [showConsultationModal, setShowConsultationModal] = useState(false);
+    
     return (
         <section className="relative w-full overflow-hidden bg-[var(--sage-forest)] min-h-[90vh] flex items-center">
             {/* Background gradient overlay */}
@@ -58,12 +62,12 @@ export function Hero() {
                             transition={{ duration: 0.6, delay: 0.3 }}
                             className="mt-6 flex flex-col sm:flex-row gap-3"
                         >
-                            <Link
-                                href="/contact"
+                            <button
+                                onClick={() => setShowConsultationModal(true)}
                                 className="inline-flex items-center justify-center bg-[var(--sage-green)] text-white px-6 py-3 rounded-lg text-base font-semibold hover:bg-[var(--sage-green-dark)] transition-all shadow-lg hover:shadow-xl hover:scale-[1.02]"
                             >
                                 Book a FREE consultation call
-                            </Link>
+                            </button>
                             <Link
                                 href="/services/business-accounting"
                                 className="inline-flex items-center justify-center border-2 border-white/30 text-white px-6 py-3 rounded-lg text-base font-semibold hover:bg-white/10 transition-all"
@@ -111,6 +115,12 @@ export function Hero() {
                     </motion.div>
                 </div>
             </div>
+            
+            {/* Consultation Modal */}
+            <ConsultationModal 
+                isOpen={showConsultationModal} 
+                onClose={() => setShowConsultationModal(false)} 
+            />
         </section>
     );
 }

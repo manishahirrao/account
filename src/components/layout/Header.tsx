@@ -1,14 +1,17 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
 import { navItems, isDropdown, type NavDropdown } from "@/data/navigation";
+import { ConsultationModal } from "@/components/ConsultationModal";
 
 export function Header() {
     const [isMobileOpen, setIsMobileOpen] = useState(false);
     const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
     const [scrolled, setScrolled] = useState(false);
+    const [showConsultationModal, setShowConsultationModal] = useState(false);
     const dropdownTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
     useEffect(() => {
@@ -33,13 +36,17 @@ export function Header() {
                     : "bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60"
                 }`}
         >
-            <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
+            <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
                 {/* Logo */}
-                <Link href="/" className="flex items-center space-x-1 shrink-0">
-                    <span className="text-2xl font-bold tracking-tight text-[var(--sage-forest)]">
-                        IN{" "}
-                        <span className="text-[var(--sage-green)]">Accountancy</span>
-                    </span>
+                <Link href="/" className="flex items-center space-x-3 shrink-0">
+                    <Image
+                        src="/SAGEX-logo.png"
+                        alt="IN Accountancy Logo"
+                        width={220}
+                        height={75}
+                        className="h-16 w-auto"
+                        priority
+                    />
                 </Link>
 
                 {/* Desktop Nav */}
@@ -78,12 +85,12 @@ export function Header() {
                 </nav>
 
                 {/* Desktop CTA */}
-                <Link
-                    href="/contact"
+                <button
+                    onClick={() => setShowConsultationModal(true)}
                     className="hidden lg:inline-flex bg-[var(--sage-green)] text-white px-5 py-2.5 rounded-lg text-sm font-semibold hover:bg-[var(--sage-green-dark)] transition-colors shadow-sm"
                 >
                     Free Consultation
-                </Link>
+                </button>
 
                 {/* Mobile toggle */}
                 <button
@@ -100,7 +107,13 @@ export function Header() {
             </div>
 
             {/* Mobile Menu */}
-            {isMobileOpen && <MobileMenu onClose={() => setIsMobileOpen(false)} />}
+            {isMobileOpen && <MobileMenu onClose={() => setIsMobileOpen(false)} onConsultationClick={() => setShowConsultationModal(true)} />}
+            
+            {/* Consultation Modal */}
+            <ConsultationModal 
+                isOpen={showConsultationModal} 
+                onClose={() => setShowConsultationModal(false)} 
+            />
         </header>
     );
 }
@@ -142,11 +155,11 @@ function MegaMenuPanel({ dropdown }: { dropdown: NavDropdown }) {
 }
 
 /* ============== Mobile Menu ============== */
-function MobileMenu({ onClose }: { onClose: () => void }) {
+function MobileMenu({ onClose, onConsultationClick }: { onClose: () => void; onConsultationClick: () => void }) {
     const [openSection, setOpenSection] = useState<string | null>(null);
 
     return (
-        <div className="lg:hidden bg-white border-t border-gray-100 shadow-lg max-h-[calc(100vh-4rem)] overflow-y-auto">
+        <div className="lg:hidden bg-white border-t border-gray-100 shadow-lg max-h-[calc(100vh-5rem)] overflow-y-auto">
             <nav className="container mx-auto px-4 py-4 space-y-1">
                 {navItems.map((item) =>
                     isDropdown(item) ? (
@@ -192,13 +205,15 @@ function MobileMenu({ onClose }: { onClose: () => void }) {
                     )
                 )}
                 <div className="pt-3">
-                    <Link
-                        href="/contact"
+                    <button
+                        onClick={() => {
+                            onConsultationClick();
+                            onClose();
+                        }}
                         className="block w-full text-center bg-[var(--sage-green)] text-white px-5 py-3 rounded-lg text-sm font-semibold hover:bg-[var(--sage-green-dark)] transition-colors"
-                        onClick={onClose}
                     >
-                        Book a FREE consultation call
-                    </Link>
+                        Free Consultation
+                    </button>
                 </div>
             </nav>
         </div>
