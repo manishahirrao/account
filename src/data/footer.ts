@@ -40,7 +40,7 @@ export const footerColumns: FooterColumn[] = [
 export const companyInfo = {
     name: "IN Accountancy",
     address: "123 Congress Avenue, Suite 400, Austin, TX 78701",
-    email: "askus@in-accountancy.com",
-    emailHref: "mailto:askus@in-accountancy.com",
+    email: "info@sagex.pro",
+    emailHref: "mailto:info@sagex.pro",
     ein: "XX-XXXXXXX",
 };

@@ -1,6 +1,0 @@
-PLACEHOLDER: Add Sage Intacct Hero Image Here
-File name: sage-intacct-hero.png
-Description: Hero image showing Sage Intacct Cloud Financial Management Software with AI features
-Suggested content: Screenshot of Sage Intacct dashboard with AI agents, financial reports, or cloud interface
-Recommended size: 600x400px or 1200x800px
-Style: Modern, cloud-focused, highlighting AI automation and financial insights

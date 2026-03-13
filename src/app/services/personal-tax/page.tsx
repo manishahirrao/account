@@ -105,11 +105,11 @@ export default function PersonalTaxPage() {
                                 </Link>
                                 <div className="mt-4 space-y-2 text-sm">
                                     <a
-                                        href="mailto:askus@in-accountancy.com"
+                                        href="mailto:info@sagex.pro"
                                         className="flex items-center gap-2 text-gray-300 hover:text-white transition-colors"
                                     >
                                         <Mail className="h-4 w-4" />
-                                        askus@in-accountancy.com
+                                        info@sagex.pro
                                     </a>
                                 </div>
                             </div>

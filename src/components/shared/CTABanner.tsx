@@ -12,7 +12,7 @@ interface CTABannerProps {
 
 export function CTABanner({
     title = "Ready to take the stress out of your accounting?",
-    email = "askus@in-accountancy.com",
+    email = "info@sagex.pro",
     ctaText = "Book a FREE consultation call",
 }: CTABannerProps) {
     const [showConsultationModal, setShowConsultationModal] = useState(false);

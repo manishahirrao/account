@@ -1,4 +1,0 @@
-PLACEHOLDER: Add Sage X3 Dashboard Image Here
-File name: sage-x3-dashboard.png
-Description: Screenshot showing Sage X3 ERP Dashboard with business insights
-Recommended size: 1200x800px or similar

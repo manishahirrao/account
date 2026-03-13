@@ -50,7 +50,7 @@ Sent from IN Accountancy website consultation form
 
     // Create mailto link
     const subject = `Consultation Request from ${formData.name}`;
-    const mailtoLink = `mailto:vismaysagex@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody)}`;
+    const mailtoLink = `mailto:info@sagex.pro?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody)}`;
     
     // Open email client
     window.location.href = mailtoLink;
@@ -147,7 +147,7 @@ Sent from IN Accountancy website consultation form
                   value={formData.email}
                   onChange={handleChange}
                   className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--sage-green)] focus:border-[var(--sage-green)] transition-all"
-                  placeholder="your@email.com"
+                  placeholder="your@company.com"
                 />
               </div>
             </div>

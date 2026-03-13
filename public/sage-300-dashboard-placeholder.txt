@@ -1,4 +1,0 @@
-PLACEHOLDER: Add Sage 300 Dashboard Image Here
-File name: sage-300-dashboard.png
-Description: Screenshot showing Chief Financial Officer Dashboard and Accounts Payable Dashboard from Sage 300
-Recommended size: 1200x800px or similar
